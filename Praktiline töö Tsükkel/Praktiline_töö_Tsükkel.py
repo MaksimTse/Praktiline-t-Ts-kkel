@@ -6,25 +6,25 @@ import turtle
 
 
 
-#def draw_shape(kuju):
-#    turtle.pen(pencolor="purple",pensize=10)
-#    turtle.speed(0)
-#    turtle.shapesize(3,3,3)
-#    turtle.fillcolor("red")
-#    if kuju == "ring":
-#        turtle.circle(50)
-#    elif kuju == "kolmnurk":
-#        for i in range(3):
-#            turtle.forward(100)
-#            turtle.left(120)
-#    elif kuju == "ruut":
-#        for i in range(4):
-#            turtle.forward(100)
-#            turtle.left(90)
+def draw_shape(kuju):
+    turtle.pen(pencolor="purple",pensize=10)
+    turtle.speed(0)
+    turtle.shapesize(3,3,3)
+    turtle.fillcolor("red")
+    if kuju == "ring":
+        turtle.circle(50)
+    elif kuju == "kolmnurk":
+        for i in range(3):
+            turtle.forward(100)
+            turtle.left(120)
+    elif kuju == "ruut":
+        for i in range(4):
+            turtle.forward(100)
+            turtle.left(90)
 
-#kuju = input("Sisestage kujund (ring, kolmnurk, ruut): \n")
-#draw_shape(kuju)
-#turtle.done()
+kuju = input("Sisestage kujund (ring, kolmnurk, ruut): \n")
+draw_shape(kuju)
+turtle.done()
 
 
 
@@ -52,25 +52,25 @@ import turtle
 #Ülesanne N.16
 
 
-#while True:
-#    ans = random.randint(1, 10)
-#    g = input("mis numbri ma arvasin?(1-10, mängu lõpetamiseks kirjutage *lõpp* ) \n")
-#    if g.lower() == "lõpp":
-#        print("mäng on läbi!")
-#        break
-#    if not g.isnumeric():
-#        print("Vale andmetüüp!")
-#        continue
-#    g = int(g)
-#    if g == ans:
-#        print("õige! sa arvasid ära!")
-#        break
-#    if g>10 or g<1:
-#        print("Vahemik on vale!")
-#        continue
-#    elif g !=ans:
-#        print(f"vale! proovi veel korra! number oli {ans}")
-#        continue
+while True:
+    ans = random.randint(1, 10)
+    g = input("mis numbri ma arvasin?(1-10, mängu lõpetamiseks kirjutage *lõpp* ) \n")
+    if g.lower() == "lõpp":
+        print("mäng on läbi!")
+        break
+    if not g.isnumeric():
+        print("Vale andmetüüp!")
+        continue
+    g = int(g)
+    if g == ans:
+        print("õige! sa arvasid ära!")
+        break
+    if g>10 or g<1:
+        print("Vahemik on vale!")
+        continue
+    elif g !=ans:
+        print(f"vale! proovi veel korra! number oli {ans}")
+        continue
 
 
 
